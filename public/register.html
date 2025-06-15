@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="rbd">
+    <center>
+    <div id="rcontainer">
+       
+        <form id="rform" action="/register" method="post">
+             <h1>Register</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+            <button id="logb" type="submit">Register</button>
+            <p>Already have an account? <a id="reg" href="login.html">Login here</a></p>
+        </form>
+        
+
+    </div>
+    </center>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", async function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const data = new URLSearchParams(formData);
+
+            const res = await fetch("/register", {
+                method: "POST",
+                body: data
+            });
+
+            const text = await res.text();
+            alert(text);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="login-body">
+    <center>
+    <div id="login-container">
+        <form id="lform" action="/login" method="post">
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="lu" name="username" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="lp" name="password" required>
+            <br><br>
+            <button id="logb" type="submit">Login</button>
+            <p>Don't have an account? <a id="reg" href="register.html">Register here</a></p>
+        </form>
+        
+
+    </div>
+    </center>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", async function(e) {
+            e.preventDefault(); // stop default form submit
+
+            const formData = new FormData(this);
+            const data = new URLSearchParams(formData);
+
+            const res = await fetch("/login", {
+                method: "POST",
+                body: data
+            });
+
+            const text = await res.text();
+            alert(text); // shows response from server
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+#login-container {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#lb{
+    background-image: url('img/gi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+     min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#ip:hover{
+    color: orange;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#ib{
+    width : 100px;
+    height: 40px;
+    font-family:'Franklin Gothic Large', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    background-color: #ff7207;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 5px;
+}
+#ib:hover{
+  width: 110px;
+  height: 41px;
+  font-family:Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #ff5900;
+    border: 2px solid #e76407;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+
+#footer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #9f9c9c77;
+    font-size: large;
+}
+
+#login-body{
+  background-image: url('img/sp.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#login-container h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ff0d00;
+  font-size: xxx-large;
+}
+
+#lform{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  width: 500px;
+  height: 1000px;
+  color: #f7f3f3;
+  background-color: #3238a791;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+}
+
+#reg{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  color: red;
+}
+
+#lu, #lp {
+  width: 250px;
+  height: 25px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px; 
+  border-radius: 3px;
+  border: 2px solid #000000;
+}
+
+#logb{
+  width : 100px;
+    height: 40px;
+    font-family:'Franklin Gothic Large', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    background-color: #ffffffb7;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 5px;
+}
+#logb:hover{
+  width: 110px;
+  height: 41px;
+  font-family:Arial, Helvetica, sans-serif;
+    background-color: #3a2ea9;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+} 
+
+#rbd{
+  background-image: url('img/sp.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#rcontainer {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#rform{
+    width: 500px; 
+  height: 1000px;
+  color: #f7f3f3;
+  background-color: #3238a791;
+  border: 4px solid #ffffff;
+  border-radius: 5px;
+}
+#rform h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ff0d00;
+  font-size: xxx-large;
+}
+
